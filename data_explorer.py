@@ -1,3 +1,4 @@
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -21,11 +22,15 @@ class DataExplorer:
         Returns:
             pd.DataFrame: The loaded data as a pandas DataFrame.
         """
+        # Get the absolute path of the file
+        base_path = os.path.abspath(os.path.dirname(__file__))
+        full_path = os.path.join(base_path, filepath)
+
         try:
-            data = pd.read_csv(filepath)
+            data = pd.read_csv(full_path)
             return data
         except Exception as e:
-            raise ValueError(f"Failed to load data from {filepath}: {e}")
+            raise ValueError(f"Failed to load data from {full_path}: {e}")
 
     @staticmethod
     def clean_data(data):
@@ -43,8 +48,8 @@ class DataExplorer:
         # Drop duplicate rows
         data = data.drop_duplicates()
 
-        # Impute missing values with the mean of each column
-        data = data.fillna(data.mean())
+        # Drop rows with any missing values
+        data = data.dropna()
 
         return data
 
