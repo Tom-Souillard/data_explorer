@@ -1,0 +1,101 @@
+### English
+
+# Contributing to Data Explorer
+
+Thank you for your interest in contributing to Data Explorer! I appreciate your help and look forward to collaborating with you. Please follow these guidelines to ensure a smooth contribution process.
+
+## Code of Conduct
+
+By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
+
+## How to Contribute
+
+### Reporting Issues
+
+If you find a bug or have a feature request, please open an issue on our [GitHub Issues page](https://github.com/Tom-Souillard/data-explorer/issues). Provide as much detail as possible to help us understand and address the issue quickly.
+
+### Fork the Repository
+
+1. Fork the repository by clicking the "Fork" button on the top right corner of the [repository page](https://github.com/Tom-Souillard/data-explorer).
+2. Clone your forked repository to your local machine:
+
+    ```bash
+    git clone https://github.com/Tom-Souillard/data_explorer
+    cd data_explorer
+    ```
+
+### Create a Branch
+
+Create a new branch for your work. Use a descriptive name for your branch to identify the feature or issue you are working on:
+
+```bash
+git checkout -b feature/your-feature-name
+```
+
+### Make Your Changes
+
+1. Install the necessary dependencies:
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+2. Make your code changes, ensuring you follow the project's coding standards.
+3. Add or update tests as necessary.
+4. Ensure all tests pass:
+
+    ```bash
+    pytest
+    ```
+
+### Commit Your Changes
+
+Write clear and descriptive commit messages. Follow the convention:
+
+```
+[scope] Brief description of the change
+```
+
+For example:
+
+```
+[feature] Add data cleaning functionality
+```
+
+### Push Your Changes
+
+Push your changes to your forked repository:
+
+```bash
+git push origin feature/your-feature-name
+```
+
+### Create a Pull Request
+
+1. Go to the original repository on GitHub.
+2. Click on the "Pull Requests" tab and then the "New Pull Request" button.
+3. Select your branch from the dropdown menu and create the pull request.
+4. Provide a clear and descriptive title and description for your pull request.
+5. Submit the pull request.
+
+### Respond to Feedback
+
+Be prepared to make changes to your pull request based on feedback from project maintainers. We appreciate your patience and cooperation.
+
+## Style Guide
+
+- Follow the PEP 8 style guide for Python code.
+- Write docstrings for all public methods and functions.
+- Use meaningful variable and function names.
+
+## Code of Conduct
+
+Please adhere to our [Code of Conduct](CODE_OF_CONDUCT.md) in all interactions.
+
+## License
+
+By contributing to Data Explorer, you agree that your contributions will be licensed under the Apache License 2.0.
+
+Thank you for your contributions!
+
+Tom Souillard
